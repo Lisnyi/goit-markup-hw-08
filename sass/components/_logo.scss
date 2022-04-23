@@ -5,8 +5,8 @@
     color: $accent-text-color;
     font-family: $secondary-font-family;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.1;
     letter-spacing: 0.03em;
 
     &--black {
@@ -15,6 +15,10 @@
 
     &--white {
         color: $white-color;
+    }
+    @media (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;        
     }
 }
 

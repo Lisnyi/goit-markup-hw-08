@@ -1,5 +1,9 @@
 .works__section {
+    display: none;
     padding-top: 0;
+    @media (min-width: 1200px) {
+        display: block;
+    }
 }
 
 .works__title {
