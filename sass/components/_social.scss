@@ -1,0 +1,36 @@
+.team-social {
+    display: flex;
+}
+
+.team-socail__item{
+    margin-left: 10px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color $transition-duration $transition-timing-function,
+        background-color $transition-duration $transition-timing-function;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: $clients-logo-color;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-text-color;
+        color: $white-color;
+}
+}
+
+.social-icon {
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+}
