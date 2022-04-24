@@ -17,9 +17,18 @@
 
 .filters-list__item {
     margin-right: 8px;
+    margin-top: 15px;
 
     &:last-child {
         margin-right: 0;
+    }
+
+    &:nth-child(-n+3) {
+        margin-top: 0;
+    }
+
+    @media (min-width: 768px) {
+        margin-top: 0;
     }
 }
 
