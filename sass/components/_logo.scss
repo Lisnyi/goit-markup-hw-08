@@ -1,7 +1,4 @@
 .logo {
-    margin-right: 93px;
-    padding: 24px 0;
-
     color: $accent-text-color;
     font-family: $secondary-font-family;
     font-weight: 700;
@@ -16,7 +13,11 @@
     &--white {
         color: $white-color;
     }
+
     @media (min-width: 1200px) {
+        margin-right: 93px;
+        padding: 24px 0;
+
         font-size: 26px;
         line-height: 1.19;        
     }
