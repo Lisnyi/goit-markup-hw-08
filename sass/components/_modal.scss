@@ -53,8 +53,8 @@
     transition: transform $transition-duration $transition-timing-function,
         opacity $transition-duration $transition-timing-function;
 
-    width: 100%;
-    height: 609px;
+    width: 95%;
+    min-height: 609px;
     padding: 40px;
     background-color: $white-color;
     border-radius: 4px;
@@ -68,7 +68,7 @@
     }
 
     @media (min-width: 1200px) {
-        min-width: 528px;
+        width: 528px;
         min-height: 581px;
     }
 }
