@@ -181,6 +181,7 @@
     justify-content: center;
     margin-top: 20px;
     font-size: 12px;
+    letter-spacing: 0.03em;
     line-height: 1.17;
 
     @media (min-width: 1200px) {
@@ -190,10 +191,10 @@
 }
 
 .modal__check-icon {
-    display: inline-block;
+    display: block;
     width: 16px;
     height: 15px;
-    margin-right: 5px;
+    margin-right: 8px;
 
     border: 2px solid $title-text-color;
     border-radius: 2px;
