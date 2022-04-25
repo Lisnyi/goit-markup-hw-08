@@ -15,9 +15,11 @@
         color: $white-color;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 768px) {
         padding: 24px 0;
+    }
 
+    @media (min-width: 1200px) {
         font-size: 26px;
         line-height: 1.19;        
     }
