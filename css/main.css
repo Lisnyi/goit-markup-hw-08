@@ -8,6 +8,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+image {
+  display: block;
+}
+
 .list {
   padding: 0;
   margin: 0;
@@ -52,10 +56,6 @@ body {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-}
-
-.img-nogap {
-  display: block;
 }
 
 .visually-hidden {
@@ -1278,6 +1278,10 @@ body {
   overflow: hidden;
 }
 
+.gallery__image {
+  width: 100%;
+}
+
 .gallery__text {
   position: absolute;
   top: 0;
@@ -1499,12 +1503,19 @@ body {
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bcg-hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bcg-hero.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/main/mobile/bcg-hero-mobile.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/main/mobile/bcg-hero-mobile.jpg);
   background-color: #2f303a;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/main/mobile/bcg-hero-mobile@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/main/mobile/bcg-hero-mobile@2x.jpg);
+  }
 }
 
 @media (min-width: 768px) {
@@ -1513,6 +1524,15 @@ body {
     height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/main/tablet/bcg-hero-tablet.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/main/tablet/bcg-hero-tablet.jpg);
+  }
+}
+
+@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/main/tablet/bcg-hero-tablet@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/main/tablet/bcg-hero-tablet@2x.jpg);
   }
 }
 
@@ -1522,6 +1542,15 @@ body {
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/main/desktop/bcg-hero-desktop.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/main/desktop/bcg-hero-desktop.jpg);
+  }
+}
+
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/main/desktop/bcg-hero-desktop@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/main/desktop/bcg-hero-desktop@2x.jpg);
   }
 }
 
@@ -1648,6 +1677,10 @@ body {
   }
 }
 
+.team__image {
+  width: 100%;
+}
+
 .team__content {
   text-align: center;
   padding: 30px 32px 24px 32px;
@@ -1677,12 +1710,12 @@ body {
 
 .works__section {
   display: none;
-  padding-top: 0;
 }
 
 @media (min-width: 1200px) {
   .works__section {
     display: block;
+    padding-top: 0;
   }
 }
 
@@ -1706,10 +1739,15 @@ body {
   margin-left: 30px;
   -ms-flex-preferred-size: calc((100% - 60px) / 3);
       flex-basis: calc((100% - 60px) / 3);
+  line-height: 0;
 }
 
 .works__item:first-child {
   margin-left: 0;
+}
+
+.works__image {
+  width: 100%;
 }
 
 .works__label {

@@ -1,8 +1,9 @@
 .works__section {
     display: none;
-    padding-top: 0;
+    
     @media (min-width: 1200px) {
         display: block;
+        padding-top: 0;
     }
 }
 
@@ -24,10 +25,15 @@
     position: relative;
     margin-left: 30px;
     flex-basis: calc((100% - 60px) / 3);
+    line-height: 0;
 
     &:first-child {
         margin-left: 0;
     }
+}
+
+.works__image {
+    width: 100%;
 }
 
 .works__label {
