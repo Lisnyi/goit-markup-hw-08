@@ -1600,6 +1600,22 @@ image {
   }
 }
 
+.hero__button {
+  padding: 10px 0;
+  height: 50px;
+  min-width: 200px;
+  border: 1px #2196f3;
+  border-radius: 4px;
+  background-color: #2196f3;
+  color: #ffffff;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
 .team__section {
   background-color: #f5f4fa;
 }
