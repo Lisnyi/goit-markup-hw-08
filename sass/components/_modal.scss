@@ -6,6 +6,8 @@
 
     width: 100vw;
     height: 100vh;
+    padding: 93px 15px 0;
+    overflow-y: auto;
     background-color: $backdrop-bgc;
     opacity: 1;
     transition: opacity $transition-duration $transition-timing-function;
@@ -45,17 +47,16 @@
 }
 
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    transform: scale(1);
     opacity: 1;
     transition: transform $transition-duration $transition-timing-function,
         opacity $transition-duration $transition-timing-function;
 
-    width: 95%;
+    width: 100%;
     min-height: 609px;
+    margin: 0 auto;
     padding: 40px;
+    overflow: auto;
     background-color: $white-color;
     border-radius: 4px;
 
@@ -182,7 +183,6 @@
     justify-content: center;
     margin-top: 20px;
     font-size: 12px;
-    letter-spacing: 0.03em;
     line-height: 1.17;
 
     @media (min-width: 1200px) {
