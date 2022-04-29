@@ -43,6 +43,7 @@
         width: 40px;
         height: 40px;
         fill: $title-text-color;
+        transition: fill $transition-duration $transition-timing-function;
         cursor: pointer;
     
         .header_menu-btn:hover &,
@@ -84,6 +85,14 @@
         &:hover,
             {
             color: $accent-text-color;
+        }
+
+        &--padding-top {
+            padding-top: 21px;
+        }
+
+        &--padding-bottom {
+            padding-bottom: 21px;
         }
 
         @media (min-width: 1200px) {
